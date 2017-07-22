@@ -1,6 +1,6 @@
-var array = ["yellow","blue","red","green","black"]
+let array = ["yellow","blue","red","green","black"]
 
-function game () {
+const game = () => {
     document.getElementById('colorReturned').style.backgroundColor = array[Math.floor(Math.random() * array.length)]
 
   if (document.getElementById('colorReturned').style.backgroundColor == document.getElementById('myColorGuess').value) {
